@@ -79,68 +79,28 @@ img{
     }
 }
 
-@media screen and (max-width:575px){
-
-    body {
-        font-size: 12px;
-        height: 100vh;
-        /* overflow-y: scroll; */
-      }
-   
-    .fb-div{
-        margin-top: -60px;
+@media (min-width: 768px) {
+    
+    .left-items-start {
+      -webkit-box-align: start !important;
+          -ms-flex-align: start !important;
+              align-items: flex-start !important;
     }
-    .fb-div h1{
-        text-align: center;
-        margin: -1em !important;
+    .width-58 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      width: 58.3333333333%;
     }
-    .fb-div p{
-        font-size: auto;
-        margin: 1em !important;
+    .width-42 {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      width: 41.6666666667%;
     }
-    .card{
-        padding: 5px;
+    .block {
+      display: block !important;
     }
-    #forgetPass1{
-        display: none;
-    }
-    #hr2{
-        display: none;
-    }
-    #hr1{
-        display: block;
-        margin-top: 20px;
-    }
-    #hr1::before{
-        position: absolute;
-        content: "or";
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: -12px;
-        background: #fff;
-        padding: 0 10px;
-        color: #333;
-    }
-    #forgetPass2{
-        display: block;
-        font-size: 20px;
-    }
-    #forgetPass2 a{
-        color: rgba(0, 68, 255, 0.6);
-    }
-    #form-footer{
-        display: none;
-    }
-    .mobile-version-footer{
-        display: block;
-        margin-top: 30px;
-    }
-    .language p{
-        text-align: center;
-        margin: 0;
-        color: rgba(0, 68, 255, 0.6);
-    }
-
 }
 
 .input{
@@ -161,13 +121,4 @@ img{
     padding: 0 8px;
     height: 35px;
     color: #555;
-}
-
-@media screen and (max-width:500px){
-    
-    .input{
-        flex-direction: column;
-        width: calc(60% - 1em) !important;
-    }
-
 }
